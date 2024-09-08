@@ -119,6 +119,34 @@
                 background-color: #616161;
             }
         }
+           .header-button {
+    background-color: #212121;
+    color: #FFFFFF;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.header-button:hover {
+    transform: scale(1.05);
+    background-color: #424242;
+}
+
+@media (prefers-color-scheme: dark) {
+    .header-button {
+        background-color: #4A4A4A;
+        color: #E0E0E0;
+    }
+
+    .header-button:hover {
+        background-color: #616161;
+    }
+}
         .pinned {
             border-left: 4px solid #9E9E9E;
         }
@@ -203,8 +231,8 @@
     <header>
         <h1 id="headerTitle">Joyance的博客</h1>
         <div id="controls">
-            <a href="https://blog-en.joyance.page"><button>English</button></a>
-            <a href="https://plog-classical.pages.dev/"><button>旧版</button></a>
+    <a href="https://blog-en.joyance.page"><button class="header-button">English</button></a>
+    <a href="https://plog-classical.pages.dev/"><button class="header-button">旧版</button></a>
         </div>
     </header>
 
